@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Property Management</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+     <!-- Header Section -->
+     <header>
+        <div class="container">
+          <!--    <h1>Bloom Property Management</h1>    -->  
+            <!-- <p>Comprehensive Property Management Services</p> -->
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Homepage Section -->
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to Bloom Property Management</h2>
+            <p>We specialize in providing property management services tailored to the needs of residential and commercial property owners.</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At Bloom Property Management, we manage every aspect of property ownership. Our mission is to maximize property value, maintain tenant satisfaction, and ensure consistent returns.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <ul>
+                <li><strong>Property Maintenance:</strong> Regular inspection, repair coordination, and preventative upkeep.</li>
+                <li><strong>Tenant Management:</strong> Handling tenant requests, repairs, and inspections.</li>
+                <li><strong>Rent Collection:</strong> Managing accounts, collecting rent, and financial reporting.</li>
+                <li><strong>Lease Management:</strong> Handling renewals, amendments, and legal compliance.</li>
+                <li><strong>Emergency Management:</strong> 24/7 emergency response for property issues.</li>
+            </ul>
+        </div>
+    </section>
+    <section id="current-project">
+        <div class="container">
+            <h2>Current Project</h2>
+    
+            <!-- Project Information -->
+            <div class="project">
+                <h3>Tsemex Luxury Apartment</h3>
+                <ul>
+                    <li><strong>Project:</strong> 2B+G+17 Story</li>
+                    <li><strong>Apartment Units:</strong> 46 ranging from 1 to 4 bedrooms, and 3-floor penthouse</li>
+                    <li><strong>Location:</strong> Besrate Gebreal, three blocks down from Lafto Mall</li>
+                    <li><strong>Property Management Model:</strong> Hotel Apartment Type</li>
+                    <li><strong>Contract Duration:</strong> Over two years</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <p>“Bloom Property Management helped us maintain our property efficiently, and the tenant satisfaction is through the roof!”</p>
+            <p>“We highly recommend Bloom for anyone looking to manage their real estate portfolio stress-free.”</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p><strong>Managing Director:</strong> Tizita Ashenafi</p>
+            <p><strong>Phone:</strong> +251944367961</p>
+            <p><strong>Email:</strong> <a href="mailto:tizitaraycon@gmail.com">tizitaraycon@gmail.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Bloom Property Management. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <button id="backToTop" title="Back to Top">Top</button>
+    <script>
+        // Get the button
+        var mybutton = document.getElementById("backToTop");
+    
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction();
+        };
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+    
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener('click', function() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        });
+    </script>
+    
+</body>
+</html>
